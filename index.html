@@ -1,0 +1,746 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareNexa | Rent • Buy • Sell • Share</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a class="logo" href="#home">
+            <b>S</b>
+            <span>
+                Share<span>Nexa</span>
+                <small>Don't Buy Everything. Just Share It.</small>
+            </span>
+        </a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#explore">Explore</a>
+            <a href="#how">How It Works</a>
+            <a href="#about">About</a>
+            <a href="#login">Login</a>
+            <a class="navbtn" href="#add">+ List an Item</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Home Section -->
+        <section class="hero" id="home">
+
+            <div>
+                <label>THE SMARTER WAY TO OWN LESS</label>
+
+                <h2>
+                    Don't Buy Everything.
+                    <br>
+                    <em>Just Share It.</em>
+                </h2>
+
+                <p>
+                    A smarter way to access the things you need.
+                    Rent what you need and sell what you don't,
+                    directly with people around you.
+                </p>
+
+                <a class="btn" href="#explore">Explore Products ↗</a>
+                <a class="btn ghost" href="#add">List Your Product</a>
+
+                <h4>Rent • Buy • Sell • Share</h4>
+            </div>
+
+            <img src="images/laptop.jpg" alt="laptop">
+
+        </section>
+
+
+        <!-- Explore Products Section -->
+        <section class="section" id="explore">
+
+            <label>DISCOVER SOMETHING USEFUL</label>
+
+            <h3>Find what you <em>need.</em></h3>
+
+            <p>
+                Explore products shared by people in your community.
+            </p>
+
+            <form class="search">
+
+                <input
+                    type="search"
+                    placeholder="Search laptops, cameras, furniture..."
+                    aria-label="Search products"
+                >
+
+                <select>
+                    <option>All categories</option>
+                    <option>Electronics</option>
+                    <option>Furniture</option>
+                    <option>Books</option>
+                    <option>Fashion</option>
+                    <option>Sports Equipment</option>
+                    <option>Vehicles</option>
+                </select>
+
+                <button class="btn" type="button">Search</button>
+
+            </form>
+
+
+            <h3>Browse categories</h3>
+
+            <div class="categories">
+
+                <div>⌘ <b>All Items</b></div>
+                <div>▣ <b>Electronics</b></div>
+                <div>⌂ <b>Furniture</b></div>
+                <div>▤ <b>Books</b></div>
+                <div>◇ <b>Fashion</b></div>
+                <div>⚽ <b>Sports</b></div>
+                <div>✧ <b>Others</b></div>
+
+            </div>
+
+
+            <div class="row">
+                <h3>Popular products</h3>
+                <small>3 sample listings</small>
+            </div>
+
+
+            <div class="products">
+
+                <!-- Laptop Card -->
+                <article class="card">
+
+                    <div class="photo">
+                        <img
+                            src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=85"
+                            alt="Laptop"
+                        >
+                        <b>FOR RENT</b>
+                    </div>
+
+                    <div class="inside">
+
+                        <small>Electronics · Good condition</small>
+
+                        <h3>Laptop</h3>
+
+                        <p>
+                            Reliable laptop for study, work and everyday tasks.
+                        </p>
+
+                        <div class="bottom">
+                            <strong>₹500 <small>/ day</small></strong>
+                            <a href="#details">View details ↗</a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Digital Camera Card -->
+                <article class="card">
+
+                    <div class="photo">
+                        <img src="images/camera.jpg" alt="camera">
+                        <b>FOR SALE</b>
+                    </div>
+
+                    <div class="inside">
+
+                        <small>Photography · Like new</small>
+
+                        <h3>Digital Camera</h3>
+
+                        <p>
+                            Capture moments with this well-kept camera.
+                        </p>
+
+                        <div class="bottom">
+                            <strong>₹8,000 <small>one-time</small></strong>
+                            <a href="#details">View details ↗</a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Bicycle Card -->
+                <article class="card">
+
+                    <div class="photo">
+                        <img src="images/bicycle.jpg" alt="bicycle">
+                        <b>FOR RENT</b>
+                    </div>
+
+                    <div class="inside">
+
+                        <small>Sports · Good condition</small>
+
+                        <h3>Mountain Bicycle</h3>
+
+                        <p>
+                            Explore your city and trails on two wheels.
+                        </p>
+
+                        <div class="bottom">
+                            <strong>₹150 <small>/ day</small></strong>
+                            <a href="#details">View details ↗</a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p class="muted">
+                These are sample listings for the college project prototype.
+            </p>
+
+        </section>
+
+
+        <!-- Product Details Section -->
+        <section class="section split" id="details">
+
+            <img
+                src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1000&q=85"
+                alt="Laptop product"
+            >
+
+            <div>
+
+                <label>PRODUCT SPOTLIGHT</label>
+
+                <h2>
+                    Good tech.
+                    <br>
+                    <em>More possibilities.</em>
+                </h2>
+
+                <p>
+                    Check product information, availability and owner
+                    details before making an arrangement.
+                </p>
+
+                <dl>
+
+                    <dt>Category</dt>
+                    <dd>Electronics</dd>
+
+                    <dt>Condition</dt>
+                    <dd>Good</dd>
+
+                    <dt>Location</dt>
+                    <dd>Set by owner</dd>
+
+                    <dt>Rental price</dt>
+                    <dd>₹500 / day</dd>
+
+                    <dt>Sale price</dt>
+                    <dd>₹25,000</dd>
+
+                    <dt>Listing mode</dt>
+                    <dd>Rent and Sell Both</dd>
+
+                    <dt>Owner</dt>
+                    <dd>Demo User</dd>
+
+                </dl>
+
+                <a class="btn" href="#booking">Rent now</a>
+                <a class="btn ghost" href="#chat">Contact owner</a>
+                <a class="btn ghost" href="#booking">Buy now</a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Add Product Section -->
+        <section class="section narrow" id="add">
+
+            <label>MAKE YOUR ITEM USEFUL</label>
+
+            <h2>List your <em>product.</em></h2>
+
+            <p>
+                Add your product to ShareNexa and choose how you want to list it.
+            </p>
+
+            <form class="panel grid">
+
+                <label>
+                    Product name
+                    <input type="text" placeholder="Enter product name" required>
+                </label>
+
+                <label>
+                    Category
+                    <select>
+                        <option>Electronics</option>
+                        <option>Furniture</option>
+                        <option>Books</option>
+                        <option>Fashion</option>
+                        <option>Sports Equipment</option>
+                        <option>Vehicles</option>
+                        <option>Other</option>
+                    </select>
+                </label>
+
+                <label class="wide">
+                    Description
+                    <textarea placeholder="Describe your product"></textarea>
+                </label>
+
+                <label>
+                    Condition
+                    <select>
+                        <option>New</option>
+                        <option>Like New</option>
+                        <option>Good</option>
+                        <option>Used</option>
+                    </select>
+                </label>
+
+                <label>
+                    Product photo
+                    <input type="file" accept="image/*">
+                </label>
+
+                <fieldset class="wide">
+
+                    <legend>Choose listing mode</legend>
+
+                    <label>
+                        <input type="radio" name="mode">
+                        Only Rent
+                    </label>
+
+                    <label>
+                        <input type="radio" name="mode">
+                        Only Sell
+                    </label>
+
+                    <label>
+                        <input type="radio" name="mode" checked>
+                        Rent &amp; Sell Both
+                    </label>
+
+                </fieldset>
+
+                <label>
+                    Rental price
+                    <input type="number" placeholder="Price per day">
+                </label>
+
+                <label>
+                    Sale price
+                    <input type="number" placeholder="Sale price">
+                </label>
+
+                <label>
+                    Security deposit (optional)
+                    <input type="number" placeholder="Deposit amount">
+                </label>
+
+                <label>
+                    Your location
+                    <input type="text" placeholder="City / area">
+                </label>
+
+                <button class="btn wide" type="button">
+                    Submit Product
+                </button>
+
+                <small class="wide muted">
+                    New listings will remain pending until admin approval.
+                </small>
+
+            </form>
+
+        </section>
+
+
+        <!-- Login and Signup Section -->
+        <section class="section" id="login">
+
+            <label>YOUR SHARE NEXA ACCOUNT</label>
+
+            <h2>Welcome to <em>ShareNexa.</em></h2>
+
+            <div class="two">
+
+                <form class="panel">
+
+                    <h3>Login</h3>
+
+                    <label>
+                        Email
+                        <input type="email" placeholder="you@example.com">
+                    </label>
+
+                    <label>
+                        Password
+                        <input type="password" placeholder="Password">
+                    </label>
+
+                    <button class="btn" type="button">Login</button>
+
+                </form>
+
+
+                <form class="panel" id="signup">
+
+                    <h3>Create an account</h3>
+
+                    <label>
+                        Full name
+                        <input type="text" placeholder="Your full name">
+                    </label>
+
+                    <label>
+                        Email
+                        <input type="email" placeholder="you@example.com">
+                    </label>
+
+                    <label>
+                        Password
+                        <input type="password" placeholder="Create a password">
+                    </label>
+
+                    <button class="btn" type="button">Sign up</button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- User Dashboard Section -->
+        <section class="section" id="dashboard">
+
+            <label>YOUR SPACE</label>
+
+            <h2>My <em>dashboard.</em></h2>
+
+            <p>Welcome, Demo User. Keep track of your activity.</p>
+
+            <div class="tiles">
+
+                <article>
+                    <h3>My Listings</h3>
+                    <p>Laptop · Pending Approval</p>
+                    <p>Digital Camera · Approved</p>
+                </article>
+
+                <article>
+                    <h3>My Bookings</h3>
+                    <p>Mountain Bicycle · Upcoming</p>
+                    <p>Camera · Completed</p>
+                </article>
+
+                <article>
+                    <h3>Account Activities</h3>
+                    <p>Products listed, rented, purchased and sold.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Rental Booking Section -->
+        <section class="section" id="booking">
+
+            <label>PLAN YOUR RENTAL</label>
+
+            <h2>Rental <em>booking.</em></h2>
+
+            <div class="two">
+
+                <article class="panel">
+
+                    <img
+                        class="bookingimg"
+                        src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=800&q=85"
+                        alt="Mountain bicycle"
+                    >
+
+                    <h3>Mountain Bicycle · ₹150/day</h3>
+
+                    <p>
+                        Security deposit: As decided by the owner.
+                    </p>
+
+                </article>
+
+
+                <form class="panel">
+
+                    <label>
+                        Rental start date
+                        <input type="date">
+                    </label>
+
+                    <label>
+                        Rental return date
+                        <input type="date">
+                    </label>
+
+                    <button class="btn" type="button">
+                        Request Booking
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <article class="panel">
+
+                <h3>Rental Return Process</h3>
+
+                <p>
+                    Both renter and owner must confirm the physical
+                    return and receipt of the product.
+                </p>
+
+                <p>
+                    Renter Confirmation: Pending
+                    · Owner Confirmation: Pending
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!-- Chat Section -->
+        <section class="section narrow" id="chat">
+
+            <label>TALK DIRECTLY</label>
+
+            <h2>Chat with <em>owner.</em></h2>
+
+            <div class="panel">
+
+                <h3>Conversation with Demo Owner</h3>
+
+                <p>
+                    <b>Owner:</b>
+                    Hello! How can I help you?
+                </p>
+
+                <p>
+                    <b>You:</b>
+                    Is this product available?
+                </p>
+
+                <form class="search">
+
+                    <input type="text" placeholder="Type your message">
+
+                    <button class="btn" type="button">Send</button>
+
+                </form>
+
+                <p>
+                    Buyers and owners can discuss product details,
+                    meeting locations and rental arrangements.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Admin Dashboard Section -->
+        <section class="section" id="admin">
+
+            <label>PLATFORM MANAGEMENT</label>
+
+            <h2>Admin <em>dashboard.</em></h2>
+
+            <div class="tiles">
+
+                <article>
+
+                    <h3>Pending Product Approvals</h3>
+
+                    <p>
+                        Laptop · Submitted by Demo User · Pending
+                    </p>
+
+                    <button class="btn" type="button">Approve</button>
+
+                    <button class="btn ghost" type="button">Reject</button>
+
+                </article>
+
+
+                <article>
+
+                    <h3>Reported Listings</h3>
+
+                    <p>
+                        Demo Product · Reason: Suspicious Listing
+                    </p>
+
+                    <button class="btn ghost" type="button">
+                        Review Report
+                    </button>
+
+                </article>
+
+
+                <article>
+
+                    <h3>User Support</h3>
+
+                    <p>
+                        Admin can review complaints and reported listings.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- How It Works Section -->
+        <section class="section" id="how">
+
+            <label>SIMPLE FROM START TO FINISH</label>
+
+            <h2>How ShareNexa <em>works.</em></h2>
+
+            <div class="steps">
+
+                <article>
+                    <b>01</b>
+                    <h3>Find a product</h3>
+                    <p>Find the product you need.</p>
+                </article>
+
+                <article>
+                    <b>02</b>
+                    <h3>Contact owner</h3>
+                    <p>Contact the product owner.</p>
+                </article>
+
+                <article>
+                    <b>03</b>
+                    <h3>Discuss details</h3>
+                    <p>Discuss price and availability.</p>
+                </article>
+
+                <article>
+                    <b>04</b>
+                    <h3>Meet and exchange</h3>
+                    <p>Meet and exchange the product physically.</p>
+                </article>
+
+                <article>
+                    <b>05</b>
+                    <h3>Return the item</h3>
+                    <p>Return rented products on the agreed date.</p>
+                </article>
+
+            </div>
+
+
+            <aside class="notice">
+
+                <b>Good to know</b>
+
+                <p>
+                    ShareNexa does not provide delivery services.
+                    Users arrange physical pickup and return themselves.
+                </p>
+
+            </aside>
+
+        </section>
+
+
+        <!-- About Us Section -->
+        <section class="section narrow" id="about">
+
+            <label>ABOUT THE PLATFORM</label>
+
+            <h2>
+                Access more.
+                <br>
+                <em>Own thoughtfully.</em>
+            </h2>
+
+            <p>
+                ShareNexa is a peer-to-peer marketplace where users
+                can rent, buy and sell products directly from other users.
+                It connects people who have useful items with people
+                who need them.
+            </p>
+
+            <p>
+                ShareNexa is a platform that connects users.
+                Product ownership, pricing, physical handover and
+                return arrangements are handled directly by the users.
+            </p>
+
+            <h3>Rent • Buy • Sell • Share</h3>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <a class="logo" href="#home">
+            <b>S</b>
+            <span>
+                Share<span>Nexa</span>
+                <small>Don't Buy Everything. Just Share It.</small>
+            </span>
+        </a>
+
+        <p>A smarter way to access the things you need.</p>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#explore">Explore</a>
+            <a href="#add">Add Product</a>
+            <a href="#how">How It Works</a>
+            <a href="#about">About Us</a>
+            <a href="#login">Login / Signup</a>
+        </nav>
+
+        <p>Rent • Buy • Sell • Share</p>
+
+        <small>
+            © 2026 ShareNexa. All Rights Reserved.
+            · College Project Prototype
+        </small>
+
+    </footer>
+
+</body>
+</html>

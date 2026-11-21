@@ -1,0 +1,836 @@
+
+/* =========================
+   ShareNexa - Main Styling
+========================= */
+
+:root {
+    --black: #08060D;
+    --plum: #24102F;
+    --violet: #8735D5;
+    --purple: #C13CFF;
+    --white: #F8F5FC;
+    --grey: #A99FB2;
+    --border: rgba(193, 60, 255, 0.2);
+    --card: #120D19;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--black);
+    color: var(--white);
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* =========================
+   Header and Navigation
+========================= */
+
+.header {
+    min-height: 82px;
+    padding: 15px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background: rgba(8, 6, 13, 0.95);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(15px);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.logo > b {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--violet), var(--purple));
+    color: white;
+    font-size: 25px;
+}
+
+.logo span span {
+    color: var(--purple);
+}
+
+.logo small {
+    display: block;
+    font-size: 10px;
+    font-weight: normal;
+    color: var(--grey);
+    margin-top: 4px;
+}
+.header nav a.active {
+    color: var(--purple);
+}
+.header nav,
+footer nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.header nav a,
+footer nav a {
+    color: var(--grey);
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.header nav a:hover,
+footer nav a:hover {
+    color: var(--purple);
+}
+
+.header nav .navbtn {
+    background: var(--violet);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+.btn {
+    display: inline-block;
+    border: 1px solid var(--violet);
+    background: linear-gradient(135deg, var(--violet), var(--purple));
+    color: white;
+    padding: 12px 22px;
+    border-radius: 9px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(193, 60, 255, 0.25);
+}
+
+.btn.ghost {
+    background: transparent;
+    border-color: var(--border);
+    color: var(--white);
+}
+
+.btn.ghost:hover {
+    background: var(--plum);
+    border-color: var(--purple);
+}
+
+
+/* =========================
+   Common Sections
+========================= */
+
+.section {
+    padding: 90px 7%;
+}
+
+.section > label,
+.hero label {
+    color: var(--purple);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section h2,
+.hero h1 {
+    font-size: clamp(32px, 5vw, 55px);
+    line-height: 1.15;
+    margin: 15px 0;
+    letter-spacing: -1.5px;
+}
+
+.section h2 em,
+.hero h1 em {
+    color: var(--purple);
+    font-style: normal;
+}
+
+.section > p {
+    color: var(--grey);
+    max-width: 650px;
+    margin-bottom: 30px;
+}
+
+.section h3 {
+    margin-bottom: 12px;
+}
+
+.muted {
+    color: var(--grey);
+    font-size: 12px;
+}
+
+
+/* =========================
+   Home Hero
+========================= */
+
+.hero {
+    min-height: 570px;
+    padding: 90px 7%;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 55px;
+    background:
+        radial-gradient(circle at 80% 45%, rgba(135, 53, 213, 0.2), transparent 35%),
+        var(--black);
+}
+
+.hero h1 {
+    font-size: clamp(42px, 5.5vw, 68px);
+    line-height: 1.12;
+    margin: 20px 0;
+    letter-spacing: -2px;
+}
+
+.hero p {
+    color: var(--grey);
+    max-width: 520px;
+    margin-bottom: 28px;
+}
+
+.hero .btn {
+    margin: 5px 8px 5px 0;
+}
+
+.hero h4 {
+    margin-top: 30px;
+    color: var(--grey);
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.hero > img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 22px;
+    border: 1px solid var(--border);
+    box-shadow: 0 15px 60px rgba(135, 53, 213, 0.2);
+}
+
+
+/* =========================
+   Search
+========================= */
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    margin: 30px 0;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 13px;
+}
+
+.search input {
+    flex: 1;
+    min-width: 100px;
+}
+
+.search input,
+.search select {
+    background: transparent;
+    border: none;
+    color: var(--white);
+    outline: none;
+    padding: 10px;
+}
+
+.search select option {
+    background: var(--card);
+    color: white;
+}
+
+
+/* =========================
+   Categories
+========================= */
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 12px;
+    margin: 20px 0 50px;
+}
+
+.categories div {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 15px 8px;
+    text-align: center;
+    color: var(--purple);
+    transition: 0.3s;
+}
+
+.categories div b {
+    display: block;
+    color: var(--white);
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.categories div:hover {
+    background: var(--plum);
+    transform: translateY(-4px);
+}
+
+
+/* =========================
+   Product Cards
+========================= */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.row small {
+    color: var(--grey);
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: var(--purple);
+    box-shadow: 0 12px 30px rgba(135, 53, 213, 0.15);
+}
+
+.photo {
+    height: 210px;
+    position: relative;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.card:hover .photo img {
+    transform: scale(1.05);
+}
+
+.photo > b {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    background: var(--violet);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.inside {
+    padding: 20px;
+}
+
+.inside > small {
+    color: var(--purple);
+    font-size: 11px;
+}
+
+.inside h3 {
+    margin: 8px 0;
+    font-size: 21px;
+}
+
+.inside p {
+    color: var(--grey);
+    font-size: 13px;
+    min-height: 50px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 18px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border);
+}
+
+.bottom strong {
+    font-size: 19px;
+    color: var(--purple);
+}
+
+.bottom strong small {
+    color: var(--grey);
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.bottom a {
+    color: var(--white);
+    font-size: 12px;
+}
+
+.bottom a:hover {
+    color: var(--purple);
+}
+
+
+/* =========================
+   Product Details
+========================= */
+
+.split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+    background: #0E0914;
+}
+
+.split > img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.split p {
+    color: var(--grey);
+    margin-bottom: 20px;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+dt {
+    color: var(--grey);
+}
+
+dd {
+    color: var(--white);
+    font-weight: bold;
+}
+
+
+/* =========================
+   Forms
+========================= */
+
+.narrow {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.panel {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.panel > label,
+.grid > label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: var(--white);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    background: #0B0810;
+    color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--purple);
+}
+
+input[type="file"] {
+    font-size: 12px;
+}
+
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.wide {
+    grid-column: 1 / -1;
+}
+
+fieldset {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+fieldset legend {
+    padding: 0 8px;
+    color: var(--purple);
+}
+
+fieldset label {
+    margin-right: 20px;
+    font-size: 13px;
+}
+
+fieldset input {
+    accent-color: var(--purple);
+}
+
+
+/* =========================
+   Login and Signup
+========================= */
+
+.two {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.two .panel {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.two .panel {
+    padding: 20px;
+}
+.two .panel .btn {
+    margin-top: 10px;
+}
+
+
+/* =========================
+   Dashboard
+========================= */
+
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.tiles article {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 25px;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.tiles article:hover {
+    border-color: var(--purple);
+    transform: translateY(-4px);
+}
+
+.tiles h3 {
+    color: var(--purple);
+}
+
+.tiles p {
+    color: var(--grey);
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+
+/* =========================
+   Rental Booking
+========================= */
+
+.bookingimg {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+
+.notice {
+    background: var(--plum);
+    border-left: 4px solid var(--purple);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+.notice b {
+    color: var(--purple);
+}
+
+.notice p {
+    color: var(--grey);
+    margin-top: 8px;
+}
+
+
+/* =========================
+   How It Works
+========================= */
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.steps article {
+    padding: 22px 15px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.steps article > b {
+    color: var(--purple);
+    font-size: 25px;
+}
+
+.steps h3 {
+    font-size: 16px;
+    margin: 12px 0;
+}
+
+.steps p {
+    color: var(--grey);
+    font-size: 12px;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    padding: 50px 7% 25px;
+    background: #0E0914;
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+
+footer .logo {
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+footer > p {
+    color: var(--grey);
+    margin: 15px 0;
+}
+
+footer nav {
+    justify-content: center;
+    margin: 25px 0;
+}
+
+footer > small {
+    color: var(--grey);
+    font-size: 11px;
+}
+
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 1000px) {
+
+    .header {
+        flex-direction: column;
+    }
+
+    .categories {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .steps {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .products {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .header nav {
+        justify-content: center;
+        gap: 13px;
+    }
+
+    .header nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding-top: 60px;
+    }
+
+    .hero > img {
+        height: 270px;
+    }
+
+    .section {
+        padding: 60px 6%;
+    }
+
+    .products,
+    .split,
+    .two,
+    .tiles,
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .steps {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .wide {
+        grid-column: auto;
+    }
+
+    .search {
+        flex-wrap: wrap;
+    }
+
+    .search input,
+    .search select {
+        width: 100%;
+    }
+
+    .split > img {
+        height: 280px;
+    }
+
+    dl {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    .products,
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 39px;
+    }
+
+    .bottom {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
